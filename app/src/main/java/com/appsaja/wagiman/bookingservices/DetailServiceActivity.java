@@ -10,7 +10,6 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.appsaja.wagiman.bookingservices.data.response.ServiceResponse;
-import com.appsaja.wagiman.bookingservices.fragment.HistoryServiceFragment;
 
 import retrofit2.Call;
 import retrofit2.Callback;

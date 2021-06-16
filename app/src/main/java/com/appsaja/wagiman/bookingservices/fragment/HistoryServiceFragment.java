@@ -25,7 +25,6 @@ import com.appsaja.wagiman.bookingservices.adapter.SpaceItem;
 import com.appsaja.wagiman.bookingservices.data.response.BookingListResponse;
 import com.appsaja.wagiman.bookingservices.implement.ItemClickListener;
 import com.appsaja.wagiman.bookingservices.model.Booking;
-import com.appsaja.wagiman.bookingservices.model.Movie;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +39,6 @@ public class HistoryServiceFragment extends Fragment implements ItemClickListene
     RecyclerViewAdapterBooking rAdapter;
     RecyclerView rView;
     StaggeredGridLayoutManager staggeredGridLayoutManager;
-    List<Movie> movieList = new ArrayList<>();
     List<Booking> dataBookings = new ArrayList<>();
     ProgressDialog progress;
 

@@ -20,9 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".ReviewActivity" />
-        <activity android:name=".DetailMovieActivity" />
-        <activity android:name=".DetailTvActivity" />
         <activity android:name=".DetailServiceActivity" />
         <activity android:name=".EditAccountActivity" />
     </application>

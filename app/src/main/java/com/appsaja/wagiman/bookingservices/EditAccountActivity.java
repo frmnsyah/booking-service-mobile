@@ -3,23 +3,17 @@ package com.appsaja.wagiman.bookingservices;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.appsaja.wagiman.bookingservices.data.response.BaseResponse;
-import com.appsaja.wagiman.bookingservices.data.response.ServiceResponse;
 import com.appsaja.wagiman.bookingservices.fragment.AccountFragment;
-import com.appsaja.wagiman.bookingservices.fragment.HistoryServiceFragment;
 
 import retrofit2.Call;
 import retrofit2.Callback;

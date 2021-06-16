@@ -5,12 +5,6 @@ import com.appsaja.wagiman.bookingservices.data.response.BookingListResponse;
 import com.appsaja.wagiman.bookingservices.data.response.DataLookupResponse;
 import com.appsaja.wagiman.bookingservices.data.response.LoginResponse;
 import com.appsaja.wagiman.bookingservices.data.response.ServiceResponse;
-import com.appsaja.wagiman.bookingservices.model.MovieDetail;
-import com.appsaja.wagiman.bookingservices.model.MovieResponse;
-import com.appsaja.wagiman.bookingservices.model.ReviewResponse;
-import com.appsaja.wagiman.bookingservices.model.Service;
-import com.appsaja.wagiman.bookingservices.model.TvDetail;
-import com.appsaja.wagiman.bookingservices.model.TvResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -18,30 +12,8 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 public interface RetrofitApi {
-    @GET("movie/top_rated")
-    Call<MovieResponse> getTopMovie(@Query("api_key") String apiKey, @Query("page") int page);
-
-    @GET("movie/{movie_id}")
-    Call<MovieDetail> getMovieDetail(@Path("movie_id") int id, @Query("api_key") String apiKey);
-
-    @GET("movie/now_playing")
-    Call<MovieResponse> getNowPlaying(@Query("api_key") String apiKey, @Query("page") int page);
-
-    @GET("movie/{movie_id}/reviews")
-    Call<ReviewResponse> getReview(@Path("movie_id") String id, @Query("api_key") String apiKey);
-
-    @GET("tv/popular")
-    Call<TvResponse> getPopularTv(@Query("api_key") String apiKey, @Query("page") int page);
-
-    @GET("tv/{tv_id}")
-    Call<TvDetail> getDetailTv(@Path("tv_id") String tvid, @Query("api_key") String apiKey);
-
-    @GET("authenticate")
-    Call<BaseResponse> testApi();
-
     @FormUrlEncoded
     @POST("authenticate/login")
     Call<LoginResponse> postLogin(

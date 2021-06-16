@@ -6,7 +6,6 @@ import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -28,23 +27,19 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.appsaja.wagiman.bookingservices.App;
-import com.appsaja.wagiman.bookingservices.DetailMovieActivity;
 import com.appsaja.wagiman.bookingservices.R;
 import com.appsaja.wagiman.bookingservices.RetrofitApi;
 import com.appsaja.wagiman.bookingservices.data.response.BaseResponse;
 import com.appsaja.wagiman.bookingservices.data.response.DataLookupResponse;
-import com.appsaja.wagiman.bookingservices.implement.ItemClickListener;
-import com.appsaja.wagiman.bookingservices.model.Movie;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class BookingFragment extends Fragment implements ItemClickListener {
+public class BookingFragment extends Fragment {
 
     View bookingView;
     EditText bookingDate;
@@ -52,7 +47,6 @@ public class BookingFragment extends Fragment implements ItemClickListener {
     DatePickerDialog datePicker;
     TimePickerDialog timePicker;
     RecyclerView rView;
-    List<Movie> movieList = new ArrayList<>();
     LayoutInflater inflat;
     ProgressDialog progress;
 
@@ -125,13 +119,6 @@ public class BookingFragment extends Fragment implements ItemClickListener {
         getLokasiService();
         new MyProgressBar().execute((Void) null);
         return bookingView;
-    }
-
-    @Override
-    public void onClick(View v, int pos) {
-        Intent intent = new Intent(getActivity(), DetailMovieActivity.class);
-        intent.putExtra(App.TAG_ID_MOVIE, movieList.get(pos).getId());
-        startActivity(intent);
     }
 
     public void getTypeMobil() {

@@ -1,9 +1,5 @@
 package com.appsaja.wagiman.bookingservices.model;
 
-/**
- * Created by Wagiman on 2/2/2018.
- */
-
 public class Users {
 
     private int id;

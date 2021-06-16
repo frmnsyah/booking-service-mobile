@@ -10,9 +10,8 @@ import android.view.MenuItem;
 
 import com.appsaja.wagiman.bookingservices.fragment.AccountFragment;
 import com.appsaja.wagiman.bookingservices.fragment.BookingFragment;
-import com.appsaja.wagiman.bookingservices.fragment.HomeFragment;
-import com.appsaja.wagiman.bookingservices.fragment.RegisterFragment;
 import com.appsaja.wagiman.bookingservices.fragment.HistoryServiceFragment;
+import com.appsaja.wagiman.bookingservices.fragment.HomeFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
