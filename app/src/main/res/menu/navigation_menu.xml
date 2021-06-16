@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuBooking"
+        android:icon="@drawable/calendar"
+        android:title="Booking"/>
+    <item
+        android:id="@+id/menuHistory"
+        android:icon="@drawable/history"
+        android:title="History"/>
+    <item
+        android:id="@+id/menuAccount"
+        android:icon="@drawable/user"
+        android:title="Account"/>
+</menu>
