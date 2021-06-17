@@ -45,9 +45,6 @@ public class EditAccountActivity extends AppCompatActivity {
     private void updateAccount(View v){
         SharedPreferences settings = getApplicationContext().getSharedPreferences("session", 0);
         int userId = settings.getInt("user_id", 0);
-        EditText name = v.findViewById(R.id.nama);
-        EditText telephone = v.findViewById(R.id.no_hp);
-        EditText address = v.findViewById(R.id.alamat);
         String nama = name.getText().toString();
         String noHp = telephone.getText().toString();
         String alamat = address.getText().toString();
