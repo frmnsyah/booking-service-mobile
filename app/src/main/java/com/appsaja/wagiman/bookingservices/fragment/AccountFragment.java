@@ -69,11 +69,6 @@ public class AccountFragment extends Fragment {
         btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progress = new ProgressDialog(v.getContext());
-                progress.setTitle("Loading");
-                progress.setMessage("Wait while loading...");
-                progress.setCancelable(false);
-                progress.show();
                 editAccount();
             }
         });
@@ -84,8 +79,8 @@ public class AccountFragment extends Fragment {
         Intent secondActivityIntent = new Intent(inflat.getContext(), EditAccountActivity.class);
         SharedPreferences settings = inflat.getContext().getSharedPreferences("session", 0);
         String nama = settings.getString("nama", "");
-        String noHp = settings.getString("alamat", "");
-        String alamat = settings.getString("no_hp", "");
+        String alamat = settings.getString("alamat", "");
+        String noHp = settings.getString("no_hp", "");
         secondActivityIntent.putExtra("NAMA", nama);
         secondActivityIntent.putExtra("NO_HP", noHp);
         secondActivityIntent.putExtra("ALAMAT", alamat);

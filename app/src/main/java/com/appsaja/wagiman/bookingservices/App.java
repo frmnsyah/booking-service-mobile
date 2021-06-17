@@ -8,8 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class App {
 
-//    public static final String BASE_URL = "http://booking-skripsi.atwebpages.com/api/";
-    public static final String BASE_URL = "http://192.168.1.5/api/";
+    public static final String BASE_URL = "http://booking-skripsi.atwebpages.com/api/";
+//    public static final String BASE_URL = "http://192.168.1.5/api/";
     public static final String TAG_ID_SERVICE = "TAG_ID_SERVICE";
     private static Retrofit retrofit = null;
 
